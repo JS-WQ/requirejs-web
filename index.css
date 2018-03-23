@@ -1,0 +1,136 @@
+*{padding:0;margin: 0;box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none;color: #fff;}
+h2{font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+h3{font-family:"Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif }
+#nav{
+    margin-top:34px;
+    max-width: 1200px;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-weight: 600;
+    position: relative;
+    z-index: 5;
+}
+#nav .webName span{color: #fed136;font-size: 32px;}
+#nav .navbtn{height: 42px;line-height: 42px;}
+#nav .navbtn ul{display: flex;}
+#nav .navbtn li{color: red;margin: 0 15px;;}
+
+#poster{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+#poster .intro-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+#poster .intro-text .intro-lead-in{font-size: 50px;}
+#poster .intro-text .intro-heading{font-size: 88px;white-space:nowrap; margin-top: 10px;margin-bottom: 76px;}
+#poster .intro-text .intro-btn{font-size: 20px;font-weight: 600;padding: 30px 54px;background: #F9D11A;border-radius: 3px;}
+#poster .intro-text .intro-btn:hover{background:#f6bf01;}
+.poster-img{
+    display: flex;
+    justify-content: center;
+}
+.poster-img .poseter-container{
+    position: relative;
+    width: 1920px;
+    height: 800px;
+    overflow: hidden;
+}
+.poster-img .poseter-container .cont-img{display: flex;position: absolute;left: -1920px;}
+.poster-img .poseter-container .cont-img li{width: 1920px;height: 800px;flex-shrink: 0;}
+.poster-img .poseter-container .cont-img li img{position: relative;top: -30%;}
+.poster-img .poseter-container .btn{width: 40px;height:72px;position: absolute;top: 50%;transform: translateY(-50%);color: hsla(0,0%,100%,.4);line-height: 72px;cursor: pointer;}
+.poster-img .poseter-container .btn .btn-img{background: url(https://img1.bdstatic.com/static/searchdetail/img/slider_btn_icon_1fac543.png) no-repeat 0 0;width: 40px;height: 72px;display: block;}
+.poster-img .poseter-container .preBtn{left: 48px;}
+.poster-img .poseter-container .preBtn .preBtn-img{background-position: 0 -87px;}
+.poster-img .poseter-container .nextBtn{right: 66px;}
+
+/* -------services---------- */
+#services{margin-top: 850px;max-width: 1200px;margin-left: auto;margin-right: auto;margin-bottom: 205px;}
+#services .services-top{text-align: center;margin-bottom: 100px;}
+#services .services-top h2{font-size: 48px;}
+#services .services-top h3{color: #777777;margin-top: 25px;}
+#services .services-ct{display: flex;justify-content:space-between;}
+#services .services-ct div{text-align: center;max-width: 360px;}
+#services .services-ct h4{margin-top: 20px;margin-bottom: 26px;font-size: 25px;}
+#services .services-ct p{color: #777;}
+
+/*---------portfolio--------*/
+#portfolio{width:100%;height:100%;background: #F7F7F7;}
+#portfolio .portfolio-box{max-width: 1200px;margin-left: auto;margin-right: auto;}
+#portfolio .portfolio-img{max-width: 1200px;margin-left: auto;margin-right: auto;position: relative;}
+#portfolio .portfolio-top{text-align: center;margin-bottom: 100px;padding-top: 195px;}
+#portfolio .portfolio-top h2{font-size: 48px;}
+#portfolio .portfolio-top h3{color: #777777;margin-top: 25px;}
+.clearfix::after{content: '';display: block;clear: both;}
+.portfolio-ct{text-align: center;}
+.portfolio-ct #pic-ct .item{
+    position: absolute;
+    padding: 0 0 10px 0;
+    width: 280px;
+    margin: 10px;
+    border: 1px solid #dfdfdf;
+    background: #ffffff;
+    opacity: 1;
+    transition: all 0.8s;
+}
+.portfolio-ct #pic-ct .item img{margin: 10px;width: 260px;}
+
+.portfolio-ct #pic-ct .hide{display: none;}
+.portfolio-ct #btn{padding: 8px 10px;background:#F9D11A;border-radius: 5px;width: 180px;height: 40px;margin:50px auto;cursor: pointer;}
+
+
+/*-------TEAM------------*/
+#myTeam{max-width: 1200px;margin-left: auto;margin-right: auto;margin-top: 190px;}
+#myTeam .myTeam-top{text-align: center;}
+#myTeam .myTeam-top h2{font-size: 48px;}
+#myTeam .myTeam-top h3{color: #777777;margin-top: 38px;margin-bottom: 95px;}
+#myTeam .myTeam-ct .team-member{display: flex;justify-content: space-around;}
+#myTeam .myTeam-ct .team-member .information-team{text-align: center;}
+#myTeam .myTeam-ct .team-member .information-team img{width: 239px;height: 239px;border-radius: 50%;border:8px solid #F7F7F7;}
+#myTeam .myTeam-ct .team-member .information-team p{color: #777777}
+#myTeam .myTeam-ct .team-member .information-team .designer-social{margin-top: 21px;}
+#myTeam .myTeam-ct .team-member .information-team .designer-social ul{display: flex;justify-content:space-evenly; }
+#myTeam .myTeam-ct .team-member .information-team .designer-social ul li:hover{fill: #f6bf01;cursor: pointer;}
+#myTeam .myTeam-ct .myTeam-text{max-width: 936px;margin-right: auto;margin-left: auto;text-align: center;color: #777777;margin-bottom: 205px;margin-top: 70px;}
+
+/*-----------brand---------*/
+#brand{max-width: 1200px;margin-left: auto;margin-right: auto;margin-bottom: 62px;}
+#brand .brand-list{display: flex;justify-content: space-around;}
+
+/*-------contact ---------*/
+#contact{background-image:url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);width: 100%;height: 960px;background-repeat: no-repeat;background-position: center;background-color: #222222;}
+#contact .contact-box{max-width: 1200px;margin-left: auto;margin-right: auto;}
+#contact .contact-box .contact-top{text-align: center;}
+#contact .contact-box .contact-top h2{font-size: 48px;color: #fff;padding-top: 186px;}
+#contact .contact-box .contact-top h3{color: #777777;margin-top: 25px;margin-bottom: 95px;}
+.contact-box .message{text-align: center;}
+.contact-box .message .message-box{display: flex;}
+.contact-box .message .message-box .visitor-contact input{padding: 28px 24px;width: 640px;border-radius: 5px;font-size: 17px;border: none;margin-bottom: 32px;}
+.contact-box .message .message-box .visitor-message textarea{min-width: 520px;border-radius: 5px;border: none;height: 292px;font-size: 17px;padding: 28px 24px;}
+.contact-box .message .message-btn{font-size: 23px;padding: 35px 50px;background: #F9D11A;border-radius: 5px;border: none;color: #ffffff;font-weight: 400;}
+.contact-box .message .message-btn:hover{background:#f6bf01;}
+/*---------- footer----------*/
+footer{max-width: 1200px;margin-left: auto;margin-right: auto;}
+#footer-box{display: flex;justify-content: space-around;margin-top: 30px;margin-bottom: 30px;height: 40px;line-height: 40px;}
+#footer-box .copyright{font-size: 19px;color: #333;}
+#footer-box .social-button ul{display: flex;}
+#footer-box .social-button ul li{margin: 0 8px;}
+#footer-box .social-button ul li:hover{fill: #f6bf01;cursor: pointer;}
+#footer-box .quicklinks a{color:#f6bf01;font-size: 19px;}
+
+/*-------gotop----------*/
+.gotop{position: fixed;right: 45px;bottom: 88px;z-index: 6;}
