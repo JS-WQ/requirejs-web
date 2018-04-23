@@ -61,7 +61,7 @@ waterfall.prototype.getNode = function(news){
 waterfall.prototype.getData = function(callback){
     var _this = this
     $.ajax({
-        url:'http://platform.sina.com.cn/slide/album_tech',
+        url:'https://platform.sina.com.cn/slide/album_tech',
         dataType:'jsonp',
         jsonp:'jsoncallback',
         data:{
